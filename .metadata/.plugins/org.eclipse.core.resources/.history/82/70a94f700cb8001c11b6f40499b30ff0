@@ -1,0 +1,66 @@
+package Entities;
+
+public class Usuario {
+	private String nome;
+	private String cpf;
+	private String senha;
+	public Usuario() {
+		super();
+	}
+	public Usuario(String nome, String cpf, String senha) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.senha = senha;
+	}
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	
+	public Boolean Validar(String senha) {
+		Boolean senhaVerificada;
+		Boolean numero = false;
+		Boolean maisc = false;
+		boolean min = false;
+		for ( char c : senha.toCharArray()) {
+			if(c >='0' && c <='9') {
+				 numero = true;
+			} else if(c >='A' && c <='Z') {
+				maisc = true;
+			} else if(c >='a' && c <='z')
+				min = true;
+		}
+		
+		if(numero && maisc && min == true) {
+			senhaVerificada = true;
+		}else {
+			senhaVerificada = false;
+		}
+		return senhaVerificada;
+		
+	}
+	
+	public String retornarNome() {
+		return this.nome;	
+	}
+
+	
+	
+}

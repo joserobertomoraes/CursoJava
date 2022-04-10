@@ -1,0 +1,53 @@
+package Application;
+
+import java.util.Scanner;
+
+import Entities.Login;
+import Entities.Usuario;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Usuario usua = new Usuario();
+			Login log = new Login();
+			int opcao;
+			boolean cadastrado ;
+			
+		System.out.println("Menu: ");
+		System.out.println("1 - Cadastrar usuario");
+		System.out.println("2 - fazer Login");
+		opcao = sc.nextInt();
+		
+		switch(opcao) {
+		
+		case 1:
+			System.out.print("Cpf:");
+			String cpf = sc.next();
+			System.out.println("Senha deve ser criada no minimo com 1 letra maiscula,minuscula e numero");
+			System.out.println("Digite a Senha");
+			String senha = sc.next();
+			do {
+			cadastrado = false;
+			if(log.ValidarSenha(senha) == true) {
+				usua = new Usuario(cpf,senha);
+				log.CadastrarUsuario(usua);
+				cadastrado = true;
+			} else {
+				System.out.println("Digite uma senha valida: ");
+				senha = sc.next();
+				
+			}
+			
+			
+			}while( cadastrado == true);
+			
+			
+		
+		}
+		
+		
+		
+	}
+}

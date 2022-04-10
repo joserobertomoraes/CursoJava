@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Entities.Quarto"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="Entities.Employee"/>
+    <fullyQualifiedTypeName name="Entities.Client"/>
+    <fullyQualifiedTypeName name="Entities.Order"/>
+    <fullyQualifiedTypeName name="Entities.Product"/>
+    <fullyQualifiedTypeName name="Entities.OrderItem"/>
+    <fullyQualifiedTypeName name="Entities.enums.OrdemStatus"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="model.entities.ReservationVersao2"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Entities.Usuario"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="Exceptions.BusinessException"/>
+</qualifiedTypeNameHistroy>

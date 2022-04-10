@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+C:\Users\joser\Documents\Estudos\ExerciciosDeFixacao - nelio Alves\.metadata\.plugins\org.eclipse.jdt.core
+3773272169.index
+921853915.index
+1242032869.index
+3902285215.index
+2617969616.index
+2524174724.index
+1580398580.index
+477932911.index
+314419928.index
+3297558422.index

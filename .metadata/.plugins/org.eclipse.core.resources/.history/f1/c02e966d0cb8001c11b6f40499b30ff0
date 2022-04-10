@@ -1,0 +1,44 @@
+package Entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Login {
+	
+	private String acesso;
+	private String sennha;
+	
+	List<Usuario> usu = new ArrayList<>();
+
+	public Login() {
+		
+	}
+
+	public Login(String acesso, String sennha) {
+		this.acesso = acesso;
+		this.sennha = sennha;
+	}
+
+	public String getAcesso() {
+		return acesso;
+	}
+
+
+	public String getSennha() {
+		return sennha;
+	}
+
+
+	public void cadastrarUsuario(Usuario usuario) {
+		usu.add(usuario);
+	}
+	
+	public void removerUsuario(Usuario usuario) {
+		usu.remove(usuario);
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package model.usuario;
+
+public class Login {
+	
+	private String cpf;
+	private String senha;
+	
+	
+
+}

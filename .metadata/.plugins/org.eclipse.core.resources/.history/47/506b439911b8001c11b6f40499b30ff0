@@ -1,0 +1,39 @@
+package Application;
+
+import java.util.Scanner;
+
+import Entities.Account;
+
+
+
+public class Programa {
+
+	public static void main(String[] args)  {
+		Scanner sc = new Scanner(System.in);
+	
+		Account conta = new Account();
+		
+		System.out.print("Numero da conta: ");
+		int contaBanc = sc.nextInt();
+		System.out.print("Titular: ");
+		sc.nextLine();
+		String nome = sc.nextLine();
+		System.out.print("Deposito Inicial: ");
+		double valor = sc.nextDouble();
+		System.out.print("Limite de saque: ");
+		double limite = sc.nextDouble();
+		conta = new Account(contaBanc,nome,valor,limite);
+		
+		
+		System.out.println("digite o valor para saque: ");
+		double saque = sc.nextDouble();
+		try {
+			conta.saque(saque);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

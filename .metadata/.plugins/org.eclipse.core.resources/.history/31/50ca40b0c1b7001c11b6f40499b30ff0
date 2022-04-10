@@ -1,0 +1,53 @@
+package Entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Login {
+	
+	private String cpf;
+	private String senha;
+	
+	List<Usuario> usu = new ArrayList<>();
+	
+	public Login() {
+		
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+	public String getSenha() {
+		return senha;
+	}
+
+public void CadastrarUsuario(List usuario) {
+usu.add(usuario);
+}
+	
+	public Boolean ValidarSenha(String senha) {
+		Boolean senhaVerificada;
+		Boolean numero = false;
+		Boolean maisc = false;
+		boolean min = false;
+		for ( char c : senha.toCharArray()) {
+			if(c >='0' && c <='9') {
+				 numero = true;
+			} else if(c >='A' && c <='Z') {
+				maisc = true;
+			} else if(c >='a' && c <='z')
+				min = true;
+		}
+		
+		if(numero && maisc && min == true) {
+			senhaVerificada = true;
+		}else {
+			senhaVerificada = false;
+		}
+		return senhaVerificada;
+		
+	}
+
+}
